@@ -55,7 +55,7 @@ void draw() {
     for (int i=0;i<spears.length;i++) {
       spears[i].update(); 
     }
-    if ( (pow(spears[0].cX - spears[1].cX, 2)) + (pow(spears[0].cY - spears[1].cY, 4)) <= 2) {
+    if ( (pow(spears[0].tip.x - spears[1].tip.x, 2)) + (pow(spears[0].tip.y - spears[1].tip.y, 4)) <= 2) {
       println("clink!");
       clink.trigger();
     //  stop();
